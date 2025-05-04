@@ -9,10 +9,10 @@ import "hardhat/console.sol";
 contract ERC20 {
     string public name;
     string public symbol;
-    uint8 public decimals = 3; // 1000 => 1 token; 1500 / 10**decimals => 1.5 tokens
+    uint8 public decimals = 3; 
     uint256 public totalSupply;
     mapping(address => uint256) public balanceOf;
-    // approver => spender => amount
+    
     mapping(address => mapping(address => uint256)) public allowance;
 
     address public owner;
